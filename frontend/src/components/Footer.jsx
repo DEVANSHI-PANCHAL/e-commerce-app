@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -48,9 +49,9 @@ const Footer = () => {
       </div>
       <div className="text-center p-3" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © {currentYear} Copyright:
-        <a className="text-white" href="https://mdbootstrap.com/">
+        <Link className="text-white" to="/">
           E-Shopping
-        </a>
+        </Link>
       </div>
     </footer>
   );
